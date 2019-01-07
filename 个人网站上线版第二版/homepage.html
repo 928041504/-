@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" href="./static/picture/10102wq.jpg" type="im/image/x-png" />
+<link rel="shortcut icon" href="./static/picture/10102wq.jpg" type="im/image/x-png" />
+    <meta name="keywords" content="前端工程师,祝高鹏简历,头不痛的无双的个人小站">
+    <meta name="description" content="祝高鹏的个人小站">
+    <meta name="author" content="祝高鹏">
+<link rel="stylesheet" href="live2d/css/live2d.css" />
+    <title>祝高鹏个人学习小站</title>
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/base.css" type="text/css">
+    <link rel="stylesheet" href="static/css/cv.css">
+
+</head>
+
+<body>
+
+
+    <div id="landlord" style="left:5px;bottom:0px;">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+        <div class="live_talk_input_body">
+            <div class="live_talk_input_name_body">
+                <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
+                    placeholder="你的名字" />
+            </div>
+            <div class="live_talk_input_text_body">
+                <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
+                    placeholder="要和我聊什么呀？" />
+                <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+            </div>
+        </div>
+        <input name="live_talk" id="live_talk" value="1" type="hidden" />
+        <div class="live_ico_box">
+            <div class="live_ico_item type_info" id="showInfoBtn"></div>
+            <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+            <div class="live_ico_item type_music" id="musicButton"></div>
+            <div class="live_ico_item type_youdu" id="youduButton"></div>
+            <div class="live_ico_item type_quit" id="hideButton"></div>
+            <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+            <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+            <input name="live2dBGM" value="https://t1.aixinxi.net/o_1c52p4qbp15idv6bl55h381moha.mp3" type="hidden">
+            <input name="live2dBGM" value="https://t1.aixinxi.net/o_1c52p8frrlmf1aled1e14m56una.mp3" type="hidden">
+            <input id="duType" value="douqilai,l2d_caihong" type="hidden">
+        </div>
+    </div>
+    <div id="open_live2d">召唤伊斯特瓦尔</div>
+
+
+
+
+    <div class="content ">
+        <div class="cv-container">
+            <div id="section1" class="section active">
+                <div id="top" title="顶部">
+                    <img src="static/picture/top.png" alt="回到顶部">
+                </div>
+                <div class="myIntro">
+                    <h1 class="fade">Hello, I'm wushuang </h1>
+                    <h3 class="fade">我是大河，自由流淌</h3>
+                    <span class="active fade" id="abMe">关于我</span>
+                    <span id="mypro" class="fade">我的作品</span>
+                </div>
+                <ul class="bg-img">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div id="section2" class="section">
+                <!-- 导航条-->
+                <div id="nav-bar" class="bar">
+                    <div class="container">
+                        <a href="javascript:;">
+                            <div class="fl">wushuang.cn</div>
+                        </a>
+                        <ul class="fr nav-ul">
+                            <li>关于我</li>
+                            <li>学习方向</li>
+                            <li>作品集</li>
+                            <li>技术掌握</li>
+                            <li>我的经历</li>
+                            <li>联系我</li>
+                        </ul>
+                        <div class="fr more-nav">
+                            <img src="static/picture/more.png" alt="更多">
+                        </div>
+                    </div>
+                    <ul class="nav-ul nav-xs-ul">
+                        <li>关于我</li>
+                        <li>学习方向</li>
+                        <li>作品集</li>
+                        <li>技术掌握</li>
+                        <li>我的经历</li>
+                        <li>联系我</li>
+                    </ul>
+                </div>
+
+                <!--关于我-->
+                <h2>关于我</h2>
+                <hr>
+                <div class="center fades">
+                    <p class="center"><img src="static/images/10102wq.jpg" alt="头像" /></p>
+                    <div class="my-intro">
+                        <p>我是祝高鹏，一个喜欢这个世界的前端程序员
+                        </p>
+                        <p>学习的路还很长，志同道合的朋友可以加我，一起进步。
+                            <a href="https://github.com/928041504" target="_blank">GitHub<img src="static/picture/github.png" alt="GitHub" /></a>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="section3" class="section">
+                <h2>学习方向</h2>
+                <hr>
+                <div class="container center fades">
+                    <div class="col-md-3 col-xs-6 skill-ps skill">
+                        <p><img src="static/picture/web.png" alt="JavaWeb"></p>
+                        <p class="ptitle">html/css/javascript</p>
+                        <p>网站前端页面编写</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 skill-web skill">
+                        <p><img src="static/picture/css.png" alt="node.js"></p>
+                        <p class="ptitle">node.js</p>
+                        <p>后端js功能实现</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 skill-js skill">
+                        <p><img src="static/picture/js.png" alt="sql"></p>
+                        <p class="ptitle">MySQL</p>
+                        <p>数据库管理</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 skill-h5 skill">
+                        <p><img src="static/picture/h5.png" alt="移动APP"></p>
+                        <p class="ptitle">移动web</p>
+                        <p>手机端的网页开发</p>
+                    </div>
+                </div>
+            </div>
+            <div id="section4" class="section">
+                <h2>作品集</h2>
+                <hr>
+                <div class="container center fades">
+                    <p class="center intros">我喜欢独立思考，乐于与人讨论</p>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="imgbox">
+                            <img src="static/picture/01.jpg" alt="作品配图">
+                        </div>
+                        <!-- <a href="http://www.caiweb.cn/blog/" target="_blank"> -->
+                            <div class="zp-cover">
+                                <h4>Blog个人博客网站</h4>
+                                <p>使用github和hexo搭建</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                        <!-- </a> -->
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="imgbox">
+                            <img src="static/picture/06.jpg" alt="作品配图">
+                        </div>
+                       <!-- <a href="http://www.caiweb.cn/student/" target="_blank">-->
+                            <div class="zp-cover" style="top: 45%">
+                                <h4>Student系统</h4>
+                                <p>建设中...</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                        <!--</a>-->
+                    </div>
+                    <div class="col-md-3 col-xs-6 ">
+                        <div class="imgbox">
+                            <img src="static/picture/02.jpg" alt="作品配图">
+                        </div>
+                        <!--<a href="#" target="_blank">-->
+                            <div class="zp-cover">
+                                <h4>空位</h4>
+                                <p>虚位以待</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                       <!-- </a>-->
+                    </div>
+                    <div class="col-md-3 col-xs-6 ">
+                        <div class="imgbox">
+                            <img src="static/picture/03.jpg" alt="作品配图">
+                        </div>
+                        <!--<a href="#" target="_blank">-->
+                            <div class="zp-cover">
+                                <h4>空位</h4>
+                                <p>虚位以待</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                       <!-- </a>-->
+                    </div>
+                    <div class="col-md-3 col-xs-6 ">
+                        <div class="imgbox">
+                            <img src="static/picture/04.jpg" alt="作品配图">
+                        </div>
+                        <!--<a href="#" target="_blank">-->
+                            <div class="zp-cover">
+                                <h4>空位</h4>
+                                <p>虚位以待</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                        <!--</a>-->
+                    </div>
+                    <div class="col-md-3 col-xs-6 ">
+                        <div class="imgbox">
+                            <img src="static/picture/05.jpg" alt="作品配图">
+                        </div>
+                        <!--<a href="#" target="_blank">-->
+                            <div class="zp-cover">
+                                <h4>空位</h4>
+                                <p>虚位以待</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                       <!-- </a>-->
+                    </div>
+
+                    <div class="col-md-3 col-xs-6 ">
+                        <div class="imgbox">
+                            <img src="static/picture/07.jpg" alt="作品配图">
+                        </div>
+                       <!-- <a href="#" target="_blank">-->
+                            <div class="zp-cover">
+                                <h4>空位</h4>
+                                <p>虚位以待</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                       <!-- </a>-->
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="imgbox">
+                            <img src="static/picture/08.jpg" alt="作品配图">
+                        </div>
+                       <!-- <a href="#" target="_blank">-->
+                            <div class="zp-cover">
+                                <h4>空位</h4>
+                                <p>虚位以待</p>
+                                <img src="static/picture/search.png" alt="查看">
+                            </div>
+                       <!-- </a>-->
+                    </div>
+                </div>
+            </div>
+            <div id="section5" class="section">
+                <h2>技术掌握</h2>
+                <hr>
+                <div class="container center fades">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="wrap-box">
+                            <div class="circle-wrap clip-auto">
+                                <div class="left-clip percent"></div>
+                                <div class="right-clip percent"></div>
+                            </div>
+                            <div class="circle-num">
+                                <span>90</span>%
+                            </div>
+                        </div>
+                        <p class="ptitle">html/css/javascript</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="wrap-box">
+                            <div class="circle-wrap clip-auto">
+                                <div class="left-clip percent"></div>
+                                <div class="right-clip percent"></div>
+                            </div>
+                            <div class="circle-num">
+                                <span>60</span>%
+                            </div>
+                        </div>
+                        <p class="ptitle">MySQL</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="wrap-box">
+                            <div class="circle-wrap clip-auto">
+                                <div class="left-clip percent"></div>
+                                <div class="right-clip percent"></div>
+                            </div>
+                            <div class="circle-num">
+                                <span>80</span>%
+                            </div>
+                        </div>
+                        <p class="ptitle">h5+css3</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="wrap-box">
+                            <div class="circle-wrap clip-auto">
+                                <div class="left-clip percent"></div>
+                                <div class="right-clip percent"></div>
+                            </div>
+                            <div class="circle-num">
+                                <span>65</span>%
+                            </div>
+                        </div>
+                        <p class="ptitle">node.js</p>
+                    </div>
+                </div>
+            </div>
+            <div id="section6" class="section">
+                <h2>我的经历</h2>
+                <hr>
+                <div class="container center fades">
+                    <ul class="my-xp">
+                        <li>
+                            <div class="date-box">
+                                <p>04/2018</p>
+                                <p>-</p>
+                                <p>现在</p>
+                            </div>
+                            <div class="my-work my-xp-box">
+                                <strong>《而已集·小杂感》</strong>
+                                <p class="ptitle">鲁迅</p>
+<p>楼下一个男人病得要死，那间壁的一家唱着留声机；对面是弄孩子。楼上有两人狂笑；还有打牌声。河中的船上有女人哭着她死去的母亲。</p>
+<p>人类的悲欢并不相通，我只觉得他们吵闹。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date-box">
+                                <p>03/2018</p>
+                                <p>-</p>
+                                <p>09/2016</p>
+                            </div>
+                            <div class="my-school my-xp-box">
+                                <strong>湖北交通职业技术学院</strong>
+                                <p class="ptitle">一枚学生</p>
+                                <p>计算机应用</p>
+                                <p>获得WEB计算机二级</p>
+                                <p></p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div id="section7" class="section">
+                <h2>联系我</h2>
+                <hr>
+                <div class="container center fades">
+                    <div class="flow">
+                        QQ：928041504
+                        <br>
+                        <br>
+                        邮箱：928041504@.qq.com
+                        <!-- UY BEGIN
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="static/js/uyan.js"></script>
+                        <!-- UY END -->
+                        <div class="half fr">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="center beian">&#169; 2017 zhugaopeng.top | <a href="javascript:;" target="_blank">鄂ICP备19000643号</a></p>
+    </div>
+    <script src="static/js/jquery-1.11.1.min.js"></script>
+    <script src="static/js/mycv.js"></script>
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        var message_Path = '/';//资源目录，如果目录不对请更改
+        var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
+    </script>
+    <script type="text/javascript" src="live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="live2d/js/message.js"></script>
+
+</body>
+
+</html>
